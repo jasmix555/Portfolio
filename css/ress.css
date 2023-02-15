@@ -13,7 +13,7 @@ html {
     background-repeat: no-repeat;
     /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
     box-sizing: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, ヒラギノ角ゴシック, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-family: 'VT323', monospace;
 }
 
 ::before,
