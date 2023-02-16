@@ -6,12 +6,59 @@ html,body {
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-        overflow: hidden;
+    background: linear-gradient(to left, #262a2f 0%, #090A0F 50% , #1B2735 100%,  );
 }
 
-#stars{
+#background{
+    pointer-events: none;
+    #stars{
+        position: fixed;
+    }
+}
+
+#arrow{
     position: fixed;
+    bottom: 30px;
+    width: 100%;
+    img{
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+    }
+    .topArw{
+        animation: topSpin linear infinite 2s;
+    }
+    .btmArw{
+        animation: botSpin linear infinite 2s;
+    }
+    @keyframes topSpin {
+        0%{
+            transform: rotateY(0deg);
+            top: 2px;
+        }
+        50%{
+            transform: rotateY(180deg);
+            top: 5px;
+        }
+        100%{
+            transform: rotateY(0deg);
+            top: 2px;
+        }
+    }
+    @keyframes botSpin {
+        0%{
+            transform: rotateY(0deg);
+            bottom: 3px;
+        }
+        50%{
+            transform: rotateY(-180deg);
+            bottom: 7px;
+        }
+        100%{
+            transform: rotateY(0deg);
+            bottom: 3px;
+        }
+    }
 }
 
 header {
@@ -27,9 +74,10 @@ header {
         margin-top: 20px;
 
         .ttl {
-            width: 30%;
+            width: 28%;
             text-align: center;
             border-bottom: 3px solid #C11717;
+            font-size: 1rem;
         }
 
         .gblNavi {
@@ -49,6 +97,7 @@ header {
                     a {
                         display: block;
                         text-decoration: none;
+                        border-bottom: 2px solid #C11717;
                         color: #F5f5f5;
                         background-image: linear-gradient(#C11717 0 0);
                         background-size: 200% .08em;
@@ -73,17 +122,20 @@ header {
 main {
     width: 100%;
 
-    #mainTxt {
-        top: 10rem;
-        left: 10%;
-        position: relative;
-        width: 50%;
-        h2 {
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.7rem;
+    .mainVis{
+        height: 88vh;
+        #mainTxt {
+            top: 10rem;
+            left: 10%;
+            position: relative;
+            width: 50%;
+            h2 {
+                font-size: 3rem;
+            }
+    
+            p {
+                font-size: 1.7rem;
+            }
         }
     }
 }
