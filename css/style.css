@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   font-size: 140%;
   color: #F5f5f5;
   height: 100%;
@@ -62,26 +63,31 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   height: 100px;
   padding: 10px;
 }
 header .navi {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
   align-items: center;
   margin-top: 20px;
 }
 header .navi .ttl {
-  width: 28%;
+  position: relative;
+  width: 30%;
   text-align: center;
   border-bottom: 3px solid #C11717;
   font-size: 1rem;
 }
+header .navi .gblNavi {
+  position: fixed;
+  right: 190px;
+}
 header .navi .gblNavi ul {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
   font-size: 1.3rem;
 }
@@ -108,14 +114,15 @@ header .navi .gblNavi ul li a:hover {
 }
 
 main {
-  width: 100%;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
 }
 main .mainVis {
-  height: 88vh;
+  height: 100vh;
 }
 main .mainVis #mainTxt {
-  top: 10rem;
-  left: 10%;
+  top: 15rem;
   position: relative;
   width: 50%;
 }
@@ -124,6 +131,29 @@ main .mainVis #mainTxt h2 {
 }
 main .mainVis #mainTxt p {
   font-size: 1.7rem;
+}
+main .aboutWrap {
+  height: 100vh;
+  margin: 0 auto;
+}
+main .aboutWrap .aboutTtl {
+  font-size: 1.2rem;
+  border-bottom: #C11717 3px solid;
+  width: 8%;
+  text-align: center;
+}
+main .aboutWrap .aboutMain {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: solid 1px skyblue;
+}
+main .aboutWrap .aboutMain .aboutPic {
+  border: #F5f5f5 solid 3px;
+  border-radius: 10px;
+  width: 300px;
+  height: 460px;
+  background: url(../img/main.jpeg) left top/cover;
 }
 
 /*# sourceMappingURL=style.css.map */
