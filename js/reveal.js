@@ -15,3 +15,6 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+const article = document.querySelector(".classwrap");
+article.dataset.value;

@@ -75,7 +75,6 @@ body {
 .clear {
     height: 200px;
     width: 100%;
-
 }
 
 header {
@@ -95,7 +94,7 @@ header {
             width: 30%;
             text-align: center;
             border-bottom: 3px solid #C11717;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
 
         .gblNavi {
@@ -164,22 +163,40 @@ main {
     }
 
     #aboutWrap {
-        height: 80vh;
+        width: 100%;
+        height: 70vh;
         margin: 0 auto;
         padding: 20px;
+
 
         .aboutTtl {
             font-size: 1.2rem;
             border-bottom: #C11717 3px solid;
             width: 8%;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         .aboutMain {
             width: 100%;
             height: 100%;
-            padding: 20px;
             display: flex;
+
+            .aboutMe {
+                width: 55%;
+                height: 50%;
+                margin: auto 10;
+                position: relative;
+                top: 15%;
+
+                p {
+                    font-family: 'DotGothic16', sans-serif;
+                    width: 80%;
+                    margin: 0 auto;
+                    height: 100%;
+                    font-size: 1rem;
+                }
+            }
 
             .aboutPic {
                 border: #F5f5f5 solid 3px;
@@ -189,51 +206,85 @@ main {
                 background: url(../img/main.jpeg) left top/cover;
                 margin: 0 auto;
             }
-
-            .aboutMe {
-                width: 55%;
-                height: 100%;
-
-                p {
-                    font-family: 'DotGothic16', sans-serif;
-                    width: 80%;
-                    margin: 0 auto;
-                    height: 100%;
-                    font-size: 1.3rem;
-                }
-            }
         }
 
     }
 
     #profWrap {
-        height: 100vh;
+        width: 100%;
+        height: 70vh;
         margin: 0 auto;
+        padding: 20px;
+
 
         .profTtl {
             font-size: 1.2rem;
             border-bottom: #C11717 3px solid;
             width: 10%;
             text-align: center;
+            margin-bottom: 20px;
         }
     }
 
     .profMain {
         font-size: 1.2rem;
 
-        .classtype {
-            color: #C11717;
+        .classwrap {
+            position: relative;
+            z-index: 2;
+            left: 5%;
+
+            &::before {
+                content: attr(data-value);
+                display: block;
+                width: 20px;
+                height: 100%;
+                position: absolute;
+                left: -50px;
+                margin: auto;
+                text-align: end;
+            }
+            .classcode{
+                display: block;
+                width: 100%;
+                &:hover{
+                    background: #1f2935;
+                }
+                .classbrckt{
+                    color: #e5c07b;
+                }
+                .classtype{
+                    color: #61afef;
+                }
+                .classel{
+                    color: #e06c75;
+                }
+                .classprod{
+                    color: #c678dd;
+                }
+                .classhead{
+                    color: #98c379;
+                }
+                .classrtrn{
+                    color: #55c9ba ;
+                }
+            }
         }
     }
 
     #worksWrap {
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
+        padding: 20px;
+
 
 
         .worksttl {
             border-bottom: 3px #C11717 solid;
             width: 10%;
             text-align: center;
+            margin-bottom: 20px;
 
         }
 
@@ -245,7 +296,7 @@ main {
 
             figure {
                 width: 100%;
-                
+
                 img {
                     width: 100%;
                 }
