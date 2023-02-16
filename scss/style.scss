@@ -72,6 +72,12 @@ body {
     }
 }
 
+.clear {
+    height: 200px;
+    width: 100%;
+
+}
+
 header {
     width: 75%;
     margin: 0 auto;
@@ -95,6 +101,7 @@ header {
         .gblNavi {
             position: fixed;
             right: 190px;
+            z-index: 1000;
 
             ul {
                 display: flex;
@@ -156,9 +163,10 @@ main {
         }
     }
 
-    .aboutWrap {
-        height: 100vh;
+    #aboutWrap {
+        height: 80vh;
         margin: 0 auto;
+        padding: 20px;
 
         .aboutTtl {
             font-size: 1.2rem;
@@ -171,16 +179,77 @@ main {
             width: 100%;
             height: 100%;
             padding: 20px;
-            border: solid 1px skyblue;
+            display: flex;
 
             .aboutPic {
                 border: #F5f5f5 solid 3px;
                 border-radius: 10px;
-                width: 300px;
-                height: 460px;
+                width: 350px;
+                height: 550px;
                 background: url(../img/main.jpeg) left top/cover;
+                margin: 0 auto;
+            }
+
+            .aboutMe {
+                width: 55%;
+                height: 100%;
+
+                p {
+                    font-family: 'DotGothic16', sans-serif;
+                    width: 80%;
+                    margin: 0 auto;
+                    height: 100%;
+                    font-size: 1.3rem;
+                }
             }
         }
 
+    }
+
+    #profWrap {
+        height: 100vh;
+        margin: 0 auto;
+
+        .profTtl {
+            font-size: 1.2rem;
+            border-bottom: #C11717 3px solid;
+            width: 10%;
+            text-align: center;
+        }
+    }
+
+    .profMain {
+        font-size: 1.2rem;
+
+        .classtype {
+            color: #C11717;
+        }
+    }
+
+    #worksWrap {
+        margin: 0 auto;
+
+
+        .worksttl {
+            border-bottom: 3px #C11717 solid;
+            width: 10%;
+            text-align: center;
+
+        }
+
+        .worksmain {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+
+            figure {
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
