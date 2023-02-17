@@ -12,31 +12,34 @@ body {
     background: linear-gradient(to left, #262a2f 0%, #090A0F 50%, #1B2735 100%, );
 }
 
-.inner-cursor{
+.inner-cursor {
     position: fixed;
     left: 10px;
     width: 20px;
     height: 20px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: #C11717;
     box-shadow: 0 0 20px #dc2727,
-    0 0 60px #dc2727;
+        0 0 60px #dc2727;
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
     transition: width 0.5s, height 0.5s;
     animation: color 5s infinite;
     z-index: 1000;
-    &.grow{
+
+    &.grow {
         width: 30px;
         height: 30px;
-        transition: width 0.5s ,height 0.5s;
+        transition: width 0.5s, height 0.5s;
     }
+
     @keyframes color {
-        0%{
+        0% {
             filter: hue-rotate(0deg);
         }
-        100%{
+
+        100% {
             filter: hue-rotate(360deg);
         }
     }
@@ -110,7 +113,7 @@ body {
     width: 100%;
 }
 
-.active{
+.active {
     background: #C11717;
     transition: 0.2s ease-in-out;
 }
@@ -119,7 +122,7 @@ body {
     display: none;
 }
 
-.border{
+.border {
     border: #C11717 5px solid;
     width: 100%;
     height: 100%;
@@ -197,7 +200,7 @@ main {
 
     .mainVis {
         height: 100vh;
-        
+
         #mainTxt {
             top: 20%;
             position: relative;
@@ -211,23 +214,27 @@ main {
             #svg {
                 position: relative;
                 top: 10px;
-                &,path{
-                    fill: none ;
+
+                &,
+                path {
+                    fill: none;
                     stroke: #C11717;
                     stroke-width: 5px;
                     stroke-dasharray: 710px;
                     stroke-dashoffset: 650px;
-                    stroke-linecap:round ;
+                    stroke-linecap: round;
                     stroke-linejoin: round;
                     animation: drawStroke 3s linear forwards;
                 }
-                @keyframes drawStroke{
-                    100%{
+
+                @keyframes drawStroke {
+                    100% {
                         stroke-dashoffset: 0;
                     }
                 }
 
             }
+
             p {
                 font-size: 1.7rem;
             }
@@ -331,10 +338,11 @@ main {
 
                 .classtype {
                     color: #61afef;
+                    margin-left: 65px;
                 }
 
                 .classel {
-                    color: #e06c75;
+                    color: #C11717;
                 }
 
                 .classprod {
@@ -343,10 +351,16 @@ main {
 
                 .classhead {
                     color: #98c379;
+                    margin-left: 100px;
                 }
 
                 .classrtrn {
                     color: #55c9ba;
+                    margin-left: 100px;
+                }
+
+                .classname {
+                    color: #e06c75;
                 }
             }
         }
@@ -469,7 +483,7 @@ main {
 
     #cntctWrap {
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         margin: 0 auto;
         padding: 20px;
 
@@ -481,8 +495,17 @@ main {
         }
 
         .inputWrap {
+            padding: 20px;
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            background: #232f3a;
+            border-radius: 10px;
+            -webkit-box-shadow: 5px 5px 5px 0px #1f2935, inset 4px 4px 15px 0px #1f2935, 5px 5px 15px 5px #3a414a;
+            box-shadow: 5px 5px 5px 0px #1f2935, inset 4px 4px 15px 0px #1f2935, 5px 5px 15px 5px #3a414a;
 
             span {
                 font-family: 'DotGothic16', sans-serif;
@@ -491,26 +514,38 @@ main {
             .inputBox {
                 margin: 0 auto;
                 position: relative;
-                width: 250px;
+                width: 40%;
+                height: 20%;
                 font-family: 'DotGothic16', sans-serif;
+                top: 5%;
 
                 input {
                     width: 100%;
                     padding: 10px;
-                    border-bottom: 2px solid #C11717;
                     outline: none;
                     color: #F5f5f5;
                     font-size: 0.8em;
 
+
                     &:valid~span,
-                    &:focus~span {
+                    &:focus~span{
                         color: #C11717;
-                        transform: translateX(-10px) translateY(-10px);
+                        transform: translateX(2px) translateY(-17px);
                         font-size: 0.6em;
                         padding: 0 10px;
                         background: none;
                         letter-spacing: 0.2em;
                     }
+                    &:focus~.line{
+                        background-color: #C11717;
+                    }
+
+                }
+                .line{
+                    width: 100%;
+                    background-color: #f5f5f5;
+                    height: 2px;
+                    transition: 0.2s ease-in-out;
                 }
 
                 span {
@@ -519,10 +554,64 @@ main {
                     padding: 10px;
                     pointer-events: none;
                     font-size: 0.8em;
-                    color: #807979;
+                    color: #c8c8c8;
                     text-transform: uppercase;
                     transition: 0.3s ease-in-out;
                 }
+
+                
+            }
+
+            .txtarea {
+                width: 90%;
+                height: 10%;
+                margin: 0 auto;
+                position: relative;
+                textarea{
+                    width: 100%;
+                    padding: 10px;
+                    outline: none;
+                    color: #F5f5f5;
+                    font-size: 0.8em;
+                    resize: none;
+                    &:valid~span,
+                    &:focus~span {
+                        color: #C11717;
+                        transform: translateX(2px) translateY(-17px);
+                        font-size: 0.6em;
+                        padding: 0 10px;
+                        background: none;
+                        letter-spacing: 0.2em;
+                    }
+                    &:focus~.line{
+                        background-color: #C11717;
+                    }
+                }
+                .line{
+                    width: 100%;
+                    background-color: #f5f5f5;
+                    height: 2px;
+                    transition: 0.2s ease-in-out;
+                }
+                span {
+                    position: absolute;
+                    left: 5px;
+                    top: -10px;
+                    padding: 10px;
+                    pointer-events: none;
+                    font-size: 0.8em;
+                    color: #c8c8c8;
+                    text-transform: uppercase;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+
+            .btn{
+                margin: 0 auto;
+                width: 20%;
+                height: 10%;
+                text-align: center;
+                border: solid 1px tomato;
             }
         }
     }
