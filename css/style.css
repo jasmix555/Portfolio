@@ -259,15 +259,15 @@ main #profWrap .profTtl {
   text-align: center;
   margin-bottom: 20px;
 }
-main .profMain {
+main #profWrap .profMain {
   font-size: 1.2rem;
 }
-main .profMain .classwrap {
+main #profWrap .profMain .classwrap {
   position: relative;
   z-index: 2;
   left: 5%;
 }
-main .profMain .classwrap::before {
+main #profWrap .profMain .classwrap::before {
   content: attr(data-value);
   display: block;
   width: 20px;
@@ -277,35 +277,35 @@ main .profMain .classwrap::before {
   margin: auto;
   text-align: end;
 }
-main .profMain .classwrap .classcode {
+main #profWrap .profMain .classwrap .classcode {
   display: block;
   width: 90%;
 }
-main .profMain .classwrap .classcode:hover {
+main #profWrap .profMain .classwrap .classcode:hover {
   background: #1f2935;
 }
-main .profMain .classwrap .classcode .classbrckt {
+main #profWrap .profMain .classwrap .classcode .classbrckt {
   color: #e5c07b;
 }
-main .profMain .classwrap .classcode .classtype {
+main #profWrap .profMain .classwrap .classcode .classtype {
   color: #61afef;
   margin-left: 65px;
 }
-main .profMain .classwrap .classcode .classel {
+main #profWrap .profMain .classwrap .classcode .classel {
   color: #C11717;
 }
-main .profMain .classwrap .classcode .classprod {
+main #profWrap .profMain .classwrap .classcode .classprod {
   color: #c678dd;
 }
-main .profMain .classwrap .classcode .classhead {
+main #profWrap .profMain .classwrap .classcode .classhead {
   color: #98c379;
   margin-left: 100px;
 }
-main .profMain .classwrap .classcode .classrtrn {
+main #profWrap .profMain .classwrap .classcode .classrtrn {
   color: #55c9ba;
   margin-left: 100px;
 }
-main .profMain .classwrap .classcode .classname {
+main #profWrap .profMain .classwrap .classcode .classname {
   color: #e06c75;
 }
 main #worksWrap {
