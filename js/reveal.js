@@ -44,9 +44,9 @@ function navHighlighter() {
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
         ) {
-            document.querySelector(".gblNavi a[href*=" + sectionId + "]").classList.add("active");
+            document.querySelector(".navi a[href*=" + sectionId + "]").classList.add("active");
         } else {
-            document.querySelector(".gblNavi a[href*=" + sectionId + "]").classList.remove("active");
+            document.querySelector(".navi a[href*=" + sectionId + "]").classList.remove("active");
         }
     });
 }
