@@ -151,6 +151,7 @@ header .navi ul li a {
   background-position: 200% 100%;
   background-repeat: no-repeat;
   transition: background-size 0.2s, background-position 0.2s 0.2s;
+  cursor: none;
 }
 header .navi ul li a:hover {
   transition: background-size 0.2s 0.2s, background-position 0.2s;
@@ -435,6 +436,9 @@ main #cntctWrap .inputWrap .inputBox input {
   color: #F5f5f5;
   font-size: 0.8em;
 }
+main #cntctWrap .inputWrap .inputBox input:hover ~ span {
+  color: #C11717;
+}
 main #cntctWrap .inputWrap .inputBox input:valid ~ span, main #cntctWrap .inputWrap .inputBox input:focus ~ span {
   color: #C11717;
   transform: translateX(2px) translateY(-17px);
@@ -475,6 +479,9 @@ main #cntctWrap .inputWrap .txtarea textarea {
   color: #F5f5f5;
   font-size: 0.8em;
   resize: none;
+}
+main #cntctWrap .inputWrap .txtarea textarea:hover ~ span {
+  color: #C11717;
 }
 main #cntctWrap .inputWrap .txtarea textarea:valid ~ span, main #cntctWrap .inputWrap .txtarea textarea:focus ~ span {
   color: #C11717;

@@ -165,6 +165,7 @@ header {
                     background-position: 200% 100%;
                     background-repeat: no-repeat;
                     transition: background-size .2s, background-position .2s .2s;
+                    cursor: none;
 
                     &:hover {
                         transition: background-size .2s .2s, background-position .2s;
@@ -520,6 +521,9 @@ main {
                     color: #F5f5f5;
                     font-size: 0.8em;
 
+                    &:hover~span{
+                        color: #C11717;
+                    }
 
                     &:valid~span,
                     &:focus~span {
@@ -571,6 +575,10 @@ main {
                     color: #F5f5f5;
                     font-size: 0.8em;
                     resize: none;
+
+                    &:hover~span{
+                        color: #C11717;
+                    }
 
                     &:valid~span,
                     &:focus~span {
