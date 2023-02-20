@@ -34,7 +34,7 @@
 	min-height: 20px;
 }
 
-a {
+.btn a {
 	position: absolute;
 	text-decoration: none;
 	color: #f5f5f5;

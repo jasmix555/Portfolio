@@ -58,6 +58,7 @@ body {
     position: fixed;
     bottom: 30px;
     width: 100%;
+    z-index: 10;
 
     img {
         display: flex;
@@ -112,8 +113,6 @@ body {
     height: 200px;
     width: 100%;
 }
-
-
 
 ::-webkit-scrollbar {
     display: none;
@@ -370,7 +369,6 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    border: solid 1px tomato;
 
     .worksttl {
         border-bottom: 3px #C11717 solid;
