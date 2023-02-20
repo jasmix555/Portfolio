@@ -99,11 +99,6 @@ body {
   width: 100%;
 }
 
-.active {
-  background: #C11717;
-  transition: 0.2s ease-in-out;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -122,6 +117,10 @@ header {
   height: 100px;
   z-index: 10;
   position: fixed;
+}
+header .active {
+  background: #C11717;
+  transition: 0.2s ease-in-out;
 }
 header .navi {
   position: inherit;
@@ -317,7 +316,7 @@ main .ttl {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  border: solid 1px skyblue;
+  border: solid 1px tomato;
 }
 #worksWrap .worksttl {
   border-bottom: 3px #C11717 solid;
