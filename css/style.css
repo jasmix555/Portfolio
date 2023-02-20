@@ -325,12 +325,6 @@ main .ttl {
   text-align: center;
   margin-bottom: 20px;
 }
-#worksWrap .worksmain {
-  display: flex;
-  gap: 50px;
-  overflow-x: scroll;
-  border: solid 2px tomato;
-}
 
 #cntctWrap {
   width: 100%;
