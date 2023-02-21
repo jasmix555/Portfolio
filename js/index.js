@@ -44,6 +44,14 @@ function Star(canvas, size, speed) {
     this.y = rand(window.innerHeight);
 }
 
+function Comet(canvas, size, speed) {
+    this.ctx = canvas.getContext("2d");
+    this.size = size;
+    this.speed = speed;
+    this.x = 5;
+    this.y = canvas.height;
+}
+
 Star.prototype.animate = function (delta) {
     this.x += this.speed * delta;
     this.y -= this.speed * delta;
@@ -53,8 +61,25 @@ Star.prototype.animate = function (delta) {
     if (this.x > window.innerWidth) {
         this.x = 0;
     }
-    this.ctx.fillStyle = "#ffffff";
+    this.ctx.fillStyle = "#f5f5f5";
     this.ctx.fillRect(this.x, this.y, this.size, this.size);
+};
+
+Comet.prototype.animate = function (delta) {
+    this.x += this.speed * delta;
+    this.y -= this.speed * delta;
+    if (this.y < 0) {
+        this.y = window.innerHeight;
+    }
+    if (this.x > window.innerWidth) {
+        this.x = 0;
+    }
+    this.x += this.speed * delta;
+    this.y -= this.speed * delta;
+    this.ctx.beginPath();
+    this.ctx.moveTo(this.x, this.y);
+    this.ctx.fillRect(this.x, this.y, this.size, this.size);
+    this.ctx.fillStyle = "#ff0000";
 };
 
 function initializeStars() {
@@ -65,17 +90,24 @@ function initializeStars() {
     var smallStarsCount = winArea * smallStarsDensity;
     var mediumStarsCount = winArea * mediumStarsDensity;
     var largeStarsCount = winArea * largeStarsDensity;
+    var cometsDensity = 0.0003;
+    var cometsCount = winArea * cometsDensity;
     stars = [];
+
     for (var i = 0; i < smallStarsCount; i++) {
         stars.push(new Star(canvas, 1, 30));
     }
 
     for (var i = 0; i < mediumStarsCount; i++) {
-        stars.push(new Star(canvas, 2, 20));
+        stars.push(new Star(canvas, 3, 20));
     }
 
     for (var i = 0; i < largeStarsCount; i++) {
-        stars.push(new Star(canvas, 3, 10));
+        stars.push(new Star(canvas, 4, 10));
+    }
+
+    for (var i = 0; i < cometsCount; i++) {
+        stars.push(new Comet(canvas, 7, 100));
     }
 }
 
@@ -101,6 +133,19 @@ function paintLoop(timestamp) {
     lastPaintTime = timestamp;
 }
 
+function ready(fn) {
+    if (
+        document.attachEvent ?
+        document.readyState === "complete" :
+        document.readyState !== "loading"
+    ) {
+        fn();
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+
+
 function fadeIn(element, duration, callback) {
     element.style.opacity = 0;
     element.style.display = "block";
@@ -119,15 +164,4 @@ function fadeIn(element, duration, callback) {
         element.style.opacity = newOpacity;
     };
     tick();
-}
-function ready(fn) {
-    if (
-        document.attachEvent ?
-        document.readyState === "complete" :
-        document.readyState !== "loading"
-    ) {
-        fn();
-    } else {
-        document.addEventListener("DOMContentLoaded", fn);
-    }
 }

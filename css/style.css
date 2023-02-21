@@ -61,10 +61,10 @@ body {
   margin: 0 auto;
 }
 #arrow .topArw {
-  animation: topSpin linear infinite 2s;
+  animation: topSpin linear infinite 3s;
 }
 #arrow .btmArw {
-  animation: botSpin linear infinite 2s;
+  animation: botSpin linear infinite 3s;
 }
 @keyframes topSpin {
   0% {
