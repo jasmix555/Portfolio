@@ -64,36 +64,14 @@
     object-fit: contain;
 }
 
-.slider-container .slider-content .slider-single .slider-single-download {
-    position: absolute;
-    display: block;
-    right: -22px;
-    bottom: 12px;
-    padding: 15px;
-    color: #333333;
-    background-color: #fdc84b;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
-    opacity: 0;
-}
-
-.slider-container .slider-content .slider-single .slider-single-download:hover,
-.slider-container .slider-content .slider-single .slider-single-download:focus {
-    outline: none;
-    text-decoration: none;
-}
-
 .slider-container .slider-content .slider-single .slider-single-title {
     display: block;
     float: right;
-    margin: 16px 0 0 20px;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #ffffff;
-    transition: 500ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
+    margin-top: 10px;
+    margin-right: 110px;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    transition: 450ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
     opacity: 0;
 }
 
@@ -108,11 +86,6 @@
 .slider-container .slider-content .slider-single.preactive .slider-single-image {
     opacity: 0.3;
     transform: translateX(-25%) scale(0.8);
-    pointer-events: none;
-}
-
-.slider-container .slider-content .slider-single.preactive .slider-single-download {
-    transform: translateX(-150px);
     pointer-events: none;
 }
 
@@ -131,10 +104,6 @@
     transform: translateX(25%) scale(0.8);
 }
 
-.slider-container .slider-content .slider-single.proactive .slider-single-download {
-    transform: translateX(150px);
-}
-
 .slider-container .slider-content .slider-single.proactive .slider-single-title {
     transform: translateX(150px);
 }
@@ -150,12 +119,6 @@
 .slider-container .slider-content .slider-single.active .slider-single-image {
     opacity: 1;
     transform: translateX(0%) scale(1);
-}
-
-.slider-container .slider-content .slider-single.active .slider-single-download {
-    opacity: 1;
-    transition-delay: 100ms;
-    transform: translateX(0px);
 }
 
 .slider-container .slider-content .slider-single.active .slider-single-title {
