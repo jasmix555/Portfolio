@@ -181,6 +181,8 @@ main .ttl {
   position: relative;
   width: 50%;
   height: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 .mainVis #mainTxt h2 {
   font-size: 3rem;
