@@ -263,11 +263,11 @@ main {
         display: flex;
 
         .aboutMe {
-            width: 55%;
+            width: 450px;
             height: 50%;
-            margin: auto 10;
+            margin: 0 auto;
             position: relative;
-            top: 5%;
+            top: 0;
 
             p {
                 font-family: 'DotGothic16', sans-serif;
@@ -413,10 +413,10 @@ main {
         &:before{
             content: '';
             position: absolute;
-            top: -22%;
-            left: 24%;
+            top: -63%;
+            left: 33%;
             width: 252.5px;
-            height: 850px;
+            height: 220%;
             background: linear-gradient(#C11717,transparent, #C11717);
             animation: brdr 3s linear infinite;
         }
@@ -425,7 +425,7 @@ main {
             content: '';
             position: absolute;
             background: #232f3a;
-            inset: 5px;
+            inset: 7px;
         }
 
         @keyframes brdr {
