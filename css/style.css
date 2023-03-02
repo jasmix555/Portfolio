@@ -352,8 +352,28 @@ main .ttl {
   margin-top: 50px;
   background: #232f3a;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 5px 0px #1f2935, inset 4px 4px 15px 0px #1f2935, 5px 5px 15px 5px #3a414a;
-  box-shadow: 5px 5px 5px 0px #1f2935, inset 4px 4px 15px 0px #1f2935, 5px 5px 15px 5px #3a414a;
+  position: relative;
+  overflow: hidden;
+}
+#cntctWrap .inputWrap:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 505px;
+  height: 588px;
+  z-index: 1;
+  background: linear-gradient(0deg, transparent, transparent, #C11717, #C11717, #C11717);
+  animation: brdr 3s linear infinite;
+  transform-origin: bottom right;
+}
+@keyframes brdr {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #cntctWrap .inputWrap span {
   font-family: "DotGothic16", sans-serif;
