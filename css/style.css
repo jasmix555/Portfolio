@@ -350,7 +350,7 @@ main .ttl {
   height: 80%;
   margin: 0 auto;
   margin-top: 50px;
-  background: #232f3a;
+  background: #363c41;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -358,14 +358,18 @@ main .ttl {
 #cntctWrap .inputWrap:before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 505px;
-  height: 588px;
-  z-index: 1;
-  background: linear-gradient(0deg, transparent, transparent, #C11717, #C11717, #C11717);
+  top: -22%;
+  left: 24%;
+  width: 252.5px;
+  height: 850px;
+  background: linear-gradient(#C11717, transparent, #C11717);
   animation: brdr 3s linear infinite;
-  transform-origin: bottom right;
+}
+#cntctWrap .inputWrap::after {
+  content: "";
+  position: absolute;
+  background: #232f3a;
+  inset: 5px;
 }
 @keyframes brdr {
   0% {
@@ -385,6 +389,7 @@ main .ttl {
   height: 20%;
   font-family: "DotGothic16", sans-serif;
   top: 5%;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .inputBox input {
   width: 100%;
@@ -392,6 +397,7 @@ main .ttl {
   outline: none;
   color: #F5f5f5;
   font-size: 0.8em;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .inputBox input:hover ~ span {
   color: #C11717;
@@ -412,6 +418,7 @@ main .ttl {
   background-color: #f5f5f5;
   height: 2px;
   transition: 0.2s ease-in-out;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .inputBox span {
   position: absolute;
@@ -422,12 +429,14 @@ main .ttl {
   color: #c8c8c8;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .txtarea {
   width: 90%;
   height: 10%;
   margin: 0 auto;
   position: relative;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .txtarea textarea {
   width: 100%;
@@ -456,6 +465,7 @@ main .ttl {
   background-color: #f5f5f5;
   height: 2px;
   transition: 0.2s ease-in-out;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .txtarea span {
   position: absolute;
@@ -467,6 +477,7 @@ main .ttl {
   color: #c8c8c8;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .icons {
   display: flex;
@@ -475,6 +486,7 @@ main .ttl {
   width: 100%;
   height: 10%;
   justify-content: center;
+  z-index: 10;
 }
 #cntctWrap .inputWrap .icons a {
   cursor: none;
