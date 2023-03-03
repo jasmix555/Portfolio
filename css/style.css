@@ -350,7 +350,7 @@ main .ttl {
   height: 80%;
   margin: 0 auto;
   margin-top: 50px;
-  background: #363c41;
+  background: #333;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -368,7 +368,7 @@ main .ttl {
 #cntctWrap .inputWrap::after {
   content: "";
   position: absolute;
-  background: #232f3a;
+  background: #202128;
   inset: 7px;
 }
 @keyframes brdr {
