@@ -1,4 +1,3 @@
-
 const repeat = false;
 const noArrows = false;
 const noBullets = false;
@@ -60,7 +59,11 @@ function slideInitial() {
     setTimeout(function () {
         slideRight();
     }, 500);
+    setInterval(() => {
+        slideRight();
+    }, 4000);
 }
+
 
 function updateBullet() {
     if (!noBullets) {
@@ -83,8 +86,7 @@ function checkRepeat() {
                 document.querySelector('.slider-right').classList.add('not-visible')
                 document.querySelector('.slider-left').classList.remove('not-visible')
             }
-        }
-        else if (slideCurrent === 0) {
+        } else if (slideCurrent === 0) {
             slide[slide.length - 1].classList.add('not-visible');
             slide[0].classList.remove('not-visible');
             if (!noArrows) {
