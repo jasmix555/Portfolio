@@ -581,6 +581,57 @@ main {
             }
         }
 
+        .btnWrap{
+            width: 90%;
+            height: 10%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            z-index: 10;
+
+            .btn {
+                width: 150px;
+                height: 50px;
+                font-weight: bold;
+                font-size: 1.3rem;
+                font-family: "Josefin Sans", sans-serif;
+                background: linear-gradient(to left, rgb(193, 23, 23), rgb(73, 72, 70));
+                box-shadow: 5px 5px 0 0 #dddddd;
+                transition: 0.3s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 20px;
+
+                a {
+                    position: absolute;
+                    text-decoration: none;
+                    color: #f5f5f5;
+                    z-index: 1000;
+                    display: block;
+                }
+
+                &::after {
+                    content: "";
+                    top: 0;
+                    left: 0;
+                    width: 150px;
+                    height: 50px;
+                    background: linear-gradient(to left,rgb(73, 72, 70), rgb(193, 23, 23) );
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    box-shadow: -5px -5px 0 0 #dddddd;
+                    transform: scale(0.9);
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 
