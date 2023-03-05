@@ -95,7 +95,7 @@ function initializeStars() {
     stars = [];
 
     for (var i = 0; i < smallStarsCount; i++) {
-        stars.push(new Star(canvas, 1, 30));
+        stars.push(new Star(canvas, 1.5, 30));
     }
 
     for (var i = 0; i < mediumStarsCount; i++) {
@@ -103,11 +103,11 @@ function initializeStars() {
     }
 
     for (var i = 0; i < largeStarsCount; i++) {
-        stars.push(new Star(canvas, 4, 10));
+        stars.push(new Star(canvas, 5, 10));
     }
 
     for (var i = 0; i < cometsCount; i++) {
-        stars.push(new Comet(canvas, 7, 100));
+        stars.push(new Comet(canvas, 10, 100));
     }
 }
 
