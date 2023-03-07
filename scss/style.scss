@@ -181,7 +181,6 @@ header {
     }
 }
 
-
 main {
     width: 70%;
     height: 100%;
@@ -308,9 +307,10 @@ main {
     .profMain {
         font-size: 1.2rem;
 
-        p{
+        p {
             margin-bottom: 3px;
         }
+
         .classwrap {
             position: relative;
             z-index: 2;
@@ -410,18 +410,18 @@ main {
         position: relative;
         overflow: hidden;
 
-        &:before{
+        &:before {
             content: '';
             position: absolute;
             top: -63%;
             left: 33%;
             width: 252.5px;
             height: 220%;
-            background: linear-gradient(#C11717,transparent, #C11717);
+            background: linear-gradient(#C11717, transparent, #C11717);
             animation: brdr 3s linear infinite;
         }
 
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             background: #202128;
@@ -429,10 +429,11 @@ main {
         }
 
         @keyframes brdr {
-            0%{
+            0% {
                 transform: rotate(0deg);
             }
-            100%{
+
+            100% {
                 transform: rotate(360deg);
             }
         }
@@ -440,7 +441,7 @@ main {
         span {
             font-family: 'DotGothic16', sans-serif;
         }
-        
+
 
         .inputBox {
             margin: 0 auto;
@@ -558,7 +559,7 @@ main {
             }
         }
 
-        .icons{
+        .icons {
             display: flex;
             gap: 4%;
             margin: 0 auto;
@@ -566,22 +567,25 @@ main {
             height: 10%;
             justify-content: center;
             z-index: 10;
-            a{
+
+            a {
                 cursor: none;
                 display: block;
-                svg{
+
+                svg {
                     width: 40px;
                     height: 40px;
                     fill: #f5f5f5;
                     transition: 0.2s ease-in-out;
-                    &:hover{
+
+                    &:hover {
                         fill: #C11717;
                     }
                 }
             }
         }
 
-        .btnWrap{
+        .btnWrap {
             width: 90%;
             height: 10%;
             margin: 0 auto;
@@ -617,7 +621,7 @@ main {
                     left: 0;
                     width: 150px;
                     height: 50px;
-                    background: linear-gradient(to left,rgb(73, 72, 70), rgb(193, 23, 23) );
+                    background: linear-gradient(to left, rgb(73, 72, 70), rgb(193, 23, 23));
                     opacity: 0;
                     transition: 0.3s;
                 }
@@ -634,5 +638,3 @@ main {
         }
     }
 }
-
-
