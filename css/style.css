@@ -7,6 +7,10 @@ body {
   scroll-behavior: smooth;
   cursor: none;
 }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* 1B2735 */
 body {
@@ -101,12 +105,8 @@ body {
   width: 100%;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .border {
-  border: #C11717 5px solid;
+  border: #C11717 4px solid;
   width: 100%;
   height: 100%;
   position: fixed;
