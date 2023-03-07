@@ -61,7 +61,7 @@ function slideInitial() {
     }, 500);
     setInterval(() => {
         slideRight();
-    }, 5000);
+    }, 7000);
 }
 
 

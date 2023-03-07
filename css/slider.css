@@ -126,7 +126,7 @@
     top: 50%;
     border: solid #f5f5f5;
     border-width: 0 8px 8px 0;
-    padding: 8px;  
+    padding: 8px;
     display: inline-block;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -140,7 +140,7 @@
     top: 50%;
     border: solid #f5f5f5;
     border-width: 0 8px 8px 0;
-    padding: 8px;  
+    padding: 8px;
     display: inline-block;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -158,14 +158,15 @@
     color: #f5f5f5;
     transition: 450ms cubic-bezier(0.17, 0.67, 0.55, 1.43);
     opacity: 0;
+    justify-content: space-between;
 }
 
-.slider-single-title a{
+.slider-single-title a {
     width: 20%;
     height: 10%;
     text-decoration: none;
     color: #f5f5f5;
-    padding:  5px 10px;
+    padding: 5px 10px;
     border: solid 1px #f5f5f5;
     border-radius: 5px;
     display: block;
@@ -173,22 +174,24 @@
     font-family: 'DotGothic16', sans-serif;
 }
 
-.slider-single a:hover{
+.slider-single a:hover {
     color: #333333;
     background: #f5f5f5;
 }
 
-.slider-single-title p{
+.slider-single-title p {
     text-align: left;
-    width: 70%;
+    width: 50%;
     position: relative;
     overflow: hidden;
     transition: 0.3s ease-in-out;
     height: 10%;
 }
 
-.slider-single-title p:hover{
-    overflow: visible;
+.slider-single-title p span{
+    font-size: 1.3em;
 }
 
-
+.slider-single-title p:hover {
+    overflow: visible;
+}
