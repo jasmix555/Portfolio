@@ -363,7 +363,7 @@ main .ttl {
   left: 33%;
   width: 252.5px;
   height: 220%;
-  background: linear-gradient(#C11717, transparent, #dfdfdf);
+  background: linear-gradient(#C11717, transparent, #C11717);
   animation: brdr 3s linear infinite;
 }
 #cntctWrap .inputWrap::after {
