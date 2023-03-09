@@ -66,21 +66,6 @@ Star.prototype.animate = function (delta) {
     this.ctx.fillRect(this.x, this.y, this.size, this.size);
 };
 
-// Comet.prototype.animate = function (delta) {
-//     this.x += this.speed * delta;
-//     this.y -= this.speed * delta;
-//     if (this.y < 0) {
-//         this.y = window.innerHeight;
-//     }
-//     if (this.x > window.innerWidth) {
-//         this.x = 0;
-//     }
-//     this.ctx.beginPath();
-//     this.ctx.moveTo(this.x, this.y);
-//     this.ctx.fillRect(this.x, this.y, this.size, this.size);
-//     this.ctx.fillStyle = "#C11717";
-// };
-
 Comet.prototype.animate = function (delta) {
     this.x += this.speed * delta;
     this.y -= this.speed * delta;
