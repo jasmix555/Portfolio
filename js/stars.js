@@ -109,7 +109,7 @@ function initializeStars() {
     }
 
     for (var i = 0; i < cometsCount; i++) {
-        stars.push(new Comet(canvas, 10, 230));
+        stars.push(new Comet(canvas, 13, 300));
     }
 }
 
