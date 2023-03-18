@@ -146,9 +146,12 @@ main .ttl {
   stroke-dashoffset: 650px;
   stroke-linecap: round;
   stroke-linejoin: round;
-  animation: drawStroke 3s linear forwards;
+  animation: drawStroke 6s linear forwards infinite;
 }
 @keyframes drawStroke {
+  40% {
+    stroke-dashoffset: 0;
+  }
   100% {
     stroke-dashoffset: 0;
   }
@@ -216,13 +219,10 @@ main .ttl {
   margin-bottom: 20px;
 }
 #aboutWrap .aboutMain {
-  width: 100%;
-  height: 92%;
   display: flex;
 }
 #aboutWrap .aboutMain .aboutMe {
-  width: 450px;
-  height: 100%;
+  width: 50%;
   margin: 0 auto;
   position: relative;
   top: 0;
@@ -283,7 +283,7 @@ main .ttl {
 }
 #profWrap .profMain .classwrap .classcode {
   display: block;
-  width: 90%;
+  width: 100%;
 }
 #profWrap .profMain .classwrap .classcode:hover {
   background: #1f2935;
@@ -550,9 +550,10 @@ footer {
   margin-left: 15px;
 }
 
-@media only screen and (min-width: 768px) {
-  .aboutMe {
+@media screen and (min-width: 1450px) {
+  .classel span {
     border: solid 1px tomato;
+    width: 100px;
   }
 }
 
