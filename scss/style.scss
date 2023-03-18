@@ -247,7 +247,6 @@ main {
     height: 75vh;
     margin: 0 auto;
     padding: 20px;
-    border: solid 1px red;
 
     .aboutTtl {
         font-size: 1.2rem;
@@ -260,7 +259,7 @@ main {
     .aboutMain {
         width: 100%;
         height: 92%;
-        display: flex;border: solid 1px skyblue;
+        display: flex;
 
         .aboutMe {
             width: 450px;
@@ -268,7 +267,6 @@ main {
             margin: 0 auto;
             position: relative;
             top: 0;
-            border: solid 1px tomato;
             overflow: hidden;
             text-overflow: ellipsis;
             word-wrap: break-word;
@@ -281,7 +279,9 @@ main {
                 height: 100%;
                 font-size: 1.4vw;
             }
+
         }
+
 
         .aboutPic {
             border: #F5f5f5 solid 3px;
@@ -649,4 +649,10 @@ footer {
     text-align: center;
     padding: 20px;
     margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .aboutMe{
+        border: solid 1px tomato;
+    }
 }
