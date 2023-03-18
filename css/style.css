@@ -222,17 +222,22 @@ main .ttl {
 }
 #aboutWrap .aboutMain .aboutMe {
   width: 450px;
-  height: 50%;
+  height: 80%;
   margin: 0 auto;
   position: relative;
   top: 0;
+  border: solid 1px tomato;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
 }
 #aboutWrap .aboutMain .aboutMe p {
   font-family: "DotGothic16", sans-serif;
   width: 80%;
   margin: 0 auto;
   height: 100%;
-  font-size: 1rem;
+  font-size: 0.7em;
 }
 #aboutWrap .aboutMain .aboutPic {
   border: #F5f5f5 solid 3px;

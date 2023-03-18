@@ -191,49 +191,49 @@ main {
         z-index: 10;
         position: relative;
         bottom: 150px;
-    
+
         img {
             display: flex;
             position: relative;
             margin: 0 auto;
         }
-    
+
         .topArw {
             animation: topSpin linear infinite 2.5s;
         }
-    
+
         .btmArw {
             animation: botSpin linear infinite 2.5s;
         }
-    
+
         @keyframes topSpin {
             0% {
                 transform: rotateY(0deg);
                 top: 2px;
             }
-    
+
             50% {
                 transform: rotateY(180deg);
                 top: 5px;
             }
-    
+
             100% {
                 transform: rotateY(0deg);
                 top: 2px;
             }
         }
-    
+
         @keyframes botSpin {
             0% {
                 transform: rotateY(0deg);
                 bottom: 3px;
             }
-    
+
             50% {
                 transform: rotateY(-180deg);
                 bottom: 7px;
             }
-    
+
             100% {
                 transform: rotateY(0deg);
                 bottom: 3px;
@@ -264,17 +264,22 @@ main {
 
         .aboutMe {
             width: 450px;
-            height: 50%;
+            height: 80%;
             margin: 0 auto;
             position: relative;
             top: 0;
+            border: solid 1px tomato;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            display: block;
 
             p {
                 font-family: 'DotGothic16', sans-serif;
                 width: 80%;
                 margin: 0 auto;
                 height: 100%;
-                font-size: 1rem;
+                font-size: 0.7em;
             }
         }
 
@@ -639,7 +644,7 @@ main {
     }
 }
 
-footer{
+footer {
     width: 100%;
     text-align: center;
     padding: 20px;
