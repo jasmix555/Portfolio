@@ -269,12 +269,12 @@ main .ttl {
 #profWrap .profMain .classwrap {
   position: relative;
   z-index: 2;
-  left: 5%;
+  left: 7%;
 }
 #profWrap .profMain .classwrap::before {
   content: attr(data-value);
   display: block;
-  width: 20px;
+  width: 30px;
   height: 100%;
   position: absolute;
   left: -50px;
@@ -284,6 +284,7 @@ main .ttl {
 #profWrap .profMain .classwrap .classcode {
   display: block;
   width: 100%;
+  margin-left: 15px;
 }
 #profWrap .profMain .classwrap .classcode:hover {
   background: #1f2935;
@@ -548,13 +549,6 @@ footer {
   text-align: center;
   padding: 20px;
   margin-left: 15px;
-}
-
-@media screen and (min-width: 1450px) {
-  .classel span {
-    border: solid 1px tomato;
-    width: 100px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
