@@ -130,6 +130,12 @@
     display: inline-block;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.slider-container .slider-left:hover{
+    scale: 0.7;
 }
 
 .slider-container .slider-right {
@@ -144,6 +150,12 @@
     display: inline-block;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    scale: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.slider-container .slider-right:hover{
+    scale: 0.7;
 }
 
 .slider-container .slider-content .slider-single .slider-single-title {
