@@ -105,7 +105,7 @@ header {
                     width: 90%;
                     display: block;
                     text-decoration: none;
-                    border-bottom: 0.5px solid #C11717;
+                    border-bottom: 1px solid #C11717;
                     color: #F5f5f5;
                     background-image: linear-gradient(#C11717 0 0);
                     background-size: 200% .08em;
@@ -279,8 +279,9 @@ main {
                 margin: 0 auto;
                 height: 90%;
                 font-size: 1.3vw;
+                // line-height: 30px;
                 position: relative;
-                top: 4%;
+                top: 3%;
                 .br{
                     margin-bottom: 1em;
                     display: block;
@@ -607,8 +608,8 @@ main {
             z-index: 10;
 
             .btn {
-                width: 150px;
-                height: 50px;
+                width: 120px;
+                height: 40px;
                 font-weight: bold;
                 font-size: 1.3rem;
                 font-family: "Josefin Sans", sans-serif;
@@ -632,8 +633,8 @@ main {
                     content: "";
                     top: 0;
                     left: 0;
-                    width: 150px;
-                    height: 50px;
+                    width: 120px;
+                    height: 40px;
                     background: linear-gradient(to left, rgb(73, 72, 70), rgb(193, 23, 23));
                     opacity: 0;
                     transition: 0.3s;
