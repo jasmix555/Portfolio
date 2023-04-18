@@ -90,7 +90,7 @@ header .navi ul li a {
   width: 90%;
   display: block;
   text-decoration: none;
-  border-bottom: 2px solid #C11717;
+  border-bottom: 0.5px solid #C11717;
   color: #F5f5f5;
   background-image: linear-gradient(#C11717 0 0);
   background-size: 200% 0.08em;
@@ -114,7 +114,7 @@ main .ttl {
   position: relative;
   width: 30%;
   text-align: center;
-  border-bottom: 3px solid #C11717;
+  border-bottom: 1px solid #C11717;
   font-size: 1rem;
   top: 10px;
 }
@@ -213,7 +213,7 @@ main .ttl {
 }
 #aboutWrap .aboutTtl {
   font-size: 1.2rem;
-  border-bottom: #C11717 3px solid;
+  border-bottom: #C11717 1px solid;
   width: 12%;
   text-align: center;
   margin-bottom: 20px;
@@ -235,11 +235,18 @@ main .ttl {
   font-family: "DotGothic16", sans-serif;
   width: 80%;
   margin: 0 auto;
-  height: 100%;
-  font-size: 1.4vw;
+  height: 90%;
+  font-size: 1.3vw;
+  position: relative;
+  top: 4%;
+}
+#aboutWrap .aboutMain .aboutMe p .br {
+  margin-bottom: 1em;
+  display: block;
 }
 #aboutWrap .aboutMain .aboutPic {
-  border: #F5f5f5 solid 3px;
+  position: relative;
+  left: 6%;
   border-radius: 10px;
   width: 24vw;
   height: 34vw;
@@ -255,7 +262,7 @@ main .ttl {
 }
 #profWrap .profTtl {
   font-size: 1.2rem;
-  border-bottom: #C11717 3px solid;
+  border-bottom: #C11717 1px solid;
   width: 14%;
   text-align: center;
   margin-bottom: 20px;
@@ -320,7 +327,7 @@ main .ttl {
   padding: 20px;
 }
 #worksWrap .worksttl {
-  border-bottom: 3px #C11717 solid;
+  border-bottom: 1px #C11717 solid;
   width: 14%;
   text-align: center;
   margin-bottom: 20px;
@@ -333,7 +340,7 @@ main .ttl {
   padding: 20px;
 }
 #cntctWrap .cntctTtl {
-  border-bottom: 3px #C11717 solid;
+  border-bottom: 1px #C11717 solid;
   width: 18%;
   text-align: center;
   margin-bottom: 20px;
