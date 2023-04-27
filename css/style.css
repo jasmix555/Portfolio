@@ -5,7 +5,6 @@ body {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
-  cursor: none;
 }
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -19,7 +18,7 @@ body {
 
 .inner-cursor {
   position: fixed;
-  left: 10px;
+  left: 20px;
   width: 20px;
   height: 20px;
   transform: translate(-50%, -50%);
@@ -29,20 +28,23 @@ body {
   border-radius: 50%;
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
-  animation: color 5s infinite;
+  animation: color 9s infinite;
   z-index: 1000;
 }
 .inner-cursor.grow {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: width 0.5s, height 0.5s;
 }
 @keyframes color {
   0% {
     filter: hue-rotate(0deg);
   }
-  100% {
+  50% {
     filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
   }
 }
 
@@ -245,13 +247,41 @@ main .ttl {
   display: block;
 }
 #aboutWrap .aboutMain .aboutPic {
-  position: relative;
-  left: 6%;
-  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
   width: 24vw;
   height: 34vw;
-  background: url(../img/main.jpeg) left top/cover;
   margin: 0 auto;
+  background: #333;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#aboutWrap .aboutMain .aboutPic:before {
+  content: "";
+  position: absolute;
+  top: -63%;
+  left: 33%;
+  width: 252.5px;
+  height: 220%;
+  background: linear-gradient(#fdf4fd, transparent, #fdf4fd);
+  animation: brdrImg 3s linear infinite;
+}
+#aboutWrap .aboutMain .aboutPic::after {
+  content: "";
+  position: absolute;
+  background: #202128;
+  inset: 7px;
+  background: url(../img/main.jpeg) left top/cover;
+}
+@keyframes brdrImg {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 #profWrap {
@@ -292,6 +322,7 @@ main .ttl {
   display: block;
   width: 85%;
   margin-left: 15px;
+  transition: 100ms;
 }
 #profWrap .profMain .classwrap .classcode:hover {
   background: #1f2935;

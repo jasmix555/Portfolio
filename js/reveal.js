@@ -51,19 +51,21 @@ function navHighlighter() {
     });
 }
 
+//js for colored cursor
+
 let innerCursor = document.querySelector(".inner-cursor");
 
 document.addEventListener("mousemove" , moveCursor);
 
 function moveCursor(e){
-    let x = e.clientX;
-    let y = e.clientY;
+    const x = e.clientX;
+    const y = e.clientY;
 
     innerCursor.style.left = `${x}px`;
     innerCursor.style.top = `${y}px`;
 }
 
-let links = Array.from(document.querySelectorAll("a"));
+let links = Array.from(document.querySelectorAll("a , .btn"));
 
 links.forEach((link) => {
     link.addEventListener("mouseover", ()=>{
